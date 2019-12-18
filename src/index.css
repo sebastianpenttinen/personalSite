@@ -1,3 +1,14 @@
 .nav-link{
   color: #FFFFFF;
 }
+
+.nav-link:hover{
+  color: darkgray;
+}
+
+h1{
+  color: #FFFFFF;
+}
+h3{
+  color: #FFFFFF;
+}

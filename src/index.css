@@ -1,14 +1,35 @@
-.nav-link{
-  color: #FFFFFF;
+.nav-link {
+  color: #ffffff;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: darkgray;
 }
 
-h1{
-  color: #FFFFFF;
+h1 {
+  color: #ffffff;
 }
-h3{
-  color: #FFFFFF;
+h3 {
+  color: #ffffff;
+}
+
+/* header social links */
+.social {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+.social li a {
+  color: #fff;
+  padding: 10px;
+}
+.social li a:hover {
+  color: #11abb0;
 }

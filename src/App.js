@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
-import { Route, Switch } from 'react-router';
-import { Home } from './components/Home';
-import { BrowserRouter } from 'react-router-dom';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router";
+import { Home } from "./components/Home";
+import { BrowserRouter } from "react-router-dom";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import './index.css'
+import "./index.css";
 export default class App extends Component {
   static displayName = App.name;
 
-  render () {
+  render() {
     return (
-        <div className="m-5">
-          <BrowserRouter>
+      <div>
+        <BrowserRouter>
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path="/" component={Home} />
           </Switch>
-          </BrowserRouter>
-        </div>
+        </BrowserRouter>
+      </div>
     );
   }
 }

@@ -1,7 +1,8 @@
-import React, { Component} from "react";
-import { Bar } from './Bar';
-import { Helmet } from 'react-helmet';
+import React, { Component } from "react";
+import { Bar } from "./Bar";
+import { Helmet } from "react-helmet";
 import { Welcome } from "./Welcome";
+import { About } from "./About";
 export class Home extends Component {
   static displayName = Home.name;
 
@@ -9,10 +10,11 @@ export class Home extends Component {
     return (
       <div>
         <Helmet>
-                <style>{'body { background-color: #121212; }'}</style>
-            </Helmet>
-        <Bar/>
-        <Welcome/>
+          <style>{"body { background-color: #121212; }"}</style>
+        </Helmet>
+        <Bar />
+        <Welcome />
+        <About />
       </div>
     );
   }

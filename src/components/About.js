@@ -1,12 +1,69 @@
 import React, { Component } from "react";
 
+const aboutStyle = {
+  background: "#2b2b2b",
+  paddingTop: "100px",
+  paddingBottom: "66px",
+  overflow: "hidden"
+};
+
+const headerStyle = {
+  display: "flex",
+  justifyContent: "center",
+  color: "#fff",
+  marginBottom: "12px"
+};
+
+const paragraphStyle = {
+  lineHeight: "30px",
+  color: "#7a7a7a"
+};
+
+const aboutMeStyle = {
+  paddingLeft: "10%",
+  paddingRight: "10%"
+};
+
+const downloadStyle = {
+  paddingTop: "6px",
+  textAlign: "center"
+};
+
+const dowloadButtonStyle = {
+  marginTop: "6px",
+  color: "#fff"
+};
+
+const howerdowloadButtonStyle = {
+  marginTop: "6px",
+  color: "OrangeRed"
+};
+
+const downloadIconStyle = {
+  marginRight: "15px",
+  fontSize: "20px"
+};
 export class About extends Component {
+  constructor(props) {
+    super(props);
+    this.toggleHover = this.toggleHover.bind(this);
+    this.state = {
+      hover: false
+    };
+  }
+
+  toggleHover() {
+    this.setState({
+      hover: !this.state.hover
+    });
+  }
+
   render() {
     return (
-      <section id="about">
-        <div class="about-me">
-          <h2>About Me</h2>
-          <p>
+      <section style={aboutStyle}>
+        <div style={aboutMeStyle}>
+          <h2 style={headerStyle}>About Me</h2>
+          <p style={paragraphStyle}>
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -19,9 +76,9 @@ export class About extends Component {
             nostrum exercitationem ullam corporis suscipit laboriosam. "
           </p>
         </div>
-        <div class="contact-details">
-          <h2>Contact details</h2>
-          <p>
+        <div style={{ textAlign: "center" }}>
+          <h2 style={headerStyle}>Contact details</h2>
+          <p style={paragraphStyle}>
             <span>Jonathan Doe</span>
             <br />
             <span>
@@ -35,10 +92,19 @@ export class About extends Component {
             <span>anyone@website.com</span>
           </p>
         </div>
-        <div class="download">
+        <div style={downloadStyle}>
           <p>
-            <a href="#" class="button">
-              <i class="fa fa-download"></i>Download Resume
+            <a
+              style={
+                this.state.hover ? howerdowloadButtonStyle : dowloadButtonStyle
+              }
+              href="google.com"
+              class="button"
+              onMouseEnter={this.toggleHover}
+              onMouseLeave={this.toggleHover}
+            >
+              <i style={downloadIconStyle} class="fa fa-download"></i>Download
+              Resume
             </a>
           </p>
         </div>

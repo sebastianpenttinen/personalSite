@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { Welcome } from "./Welcome";
 import { About } from "./About";
 import { Education } from "./Education";
+import { Work } from "./Work";
 export class Home extends Component {
   static displayName = Home.name;
 
@@ -17,6 +18,7 @@ export class Home extends Component {
         <Welcome />
         <About />
         <Education />
+        <Work />
       </div>
     );
   }

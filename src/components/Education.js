@@ -45,7 +45,7 @@ export class Education extends Component {
               <span style={headingSpanStyle}>Education</span>
             </h1>
           </div>
-          <div style={colStyle}>
+          <div>
             <div>
               <div>
                 <h3>University of Life</h3>

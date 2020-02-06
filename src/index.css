@@ -5,7 +5,12 @@
 .nav-link:hover {
   color: OrangeRed;
 }
-
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+}
 h1 {
   color: #ffffff;
 }

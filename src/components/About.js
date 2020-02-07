@@ -77,19 +77,9 @@ export class About extends Component {
           </p>
         </div>
         <div style={{ textAlign: "center" }}>
-          <h2 style={headerStyle}>Contact details</h2>
+          <h2 style={headerStyle}>Contact Me</h2>
           <p style={paragraphStyle}>
-            <span>Jonathan Doe</span>
-            <br />
-            <span>
-              1600 Amphitheatre Parkway
-              <br />
-              Mountain View, CA 94043 US
-            </span>
-            <br />
-            <span>(123)456-7890</span>
-            <br />
-            <span>anyone@website.com</span>
+            <span>sebastian.penttinen@gmail.com</span>
           </p>
         </div>
         <div style={downloadStyle}>
@@ -98,7 +88,7 @@ export class About extends Component {
               style={
                 this.state.hover ? howerdowloadButtonStyle : dowloadButtonStyle
               }
-              href="google.com"
+              href="cv"
               class="button"
               onMouseEnter={this.toggleHover}
               onMouseLeave={this.toggleHover}

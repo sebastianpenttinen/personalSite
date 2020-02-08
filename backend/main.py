@@ -1,11 +1,13 @@
-from flask import Flask, render_template, send_file
+import os
+from flask import Flask, send_file
 
-app = Flask(__name__, static_folder="../build/static", template_folder="../build")
+app = Flask(__name__, static_folder="build/")
 
 
 @app.route("/")
 def main():
-    return render_template("index.html")
+    index_path = os.path.join(app.static_folder, "index.html")
+    return send_file(index_path)
 
 
 @app.route("/cv")
@@ -14,8 +16,6 @@ def downloadCv():
     return send_file(path, as_attachment=True)
 
 
-print("Starting Flask!")
-
-app.debug = True
-app.run(host="0.0.0.0")
-
+if __name__ == "__main__":
+    # Only for debugging while developing
+    app.run(host="0.0.0.0", debug=True, port=80)

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 const workStyle = {
   background: "#fff",
-  paddingTop: "50px",
-  overflow: "hidden"
+  overflow: "hidden",
+  textAlign: "center"
 };
 
 const headingStyle = {
@@ -34,6 +34,12 @@ const colStyle = {
   paddingRight: "10%"
 };
 
+const subHeaderStyling = {
+  color: "#6e7881",
+  marginTop: "25px",
+  fontSize: "larger"
+};
+
 export class Work extends Component {
   render() {
     return (
@@ -47,40 +53,62 @@ export class Work extends Component {
         <div style={colStyle}>
           <div>
             <div>
-              <h3>Awesome Design Studio</h3>
+              <h3 style={subHeaderStyling}>Åbo Akademi University</h3>
               <p style={infoStyle}>
-                Senior UX Designer <span style={infoSpanStyle}>&bull;</span>{" "}
-                <em>March 2010 - Present</em>
+                Research Assistant <span style={infoSpanStyle}>&bull;</span>{" "}
+                <em>November 2019 - Present</em>
               </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-                fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum
-                felis eu pede mollis pretium.
-              </p>
+              <ul style={{ listStyle: "none", paddingLeft: "0" }}>
+                <li>Working full time as a research assistant.</li>
+                <li>Main responsibility is to write my master thesis.</li>
+                <li>Tech stack: Python, Open Ai gym, Qt</li>
+              </ul>
             </div>
           </div>
 
           <div>
             <div>
-              <h3>Super Cool Studio</h3>
+              <h3 style={subHeaderStyling}>Beamex Oy Ab</h3>
               <p style={infoStyle}>
-                UX Designer <span style={infoSpanStyle}>&bull;</span>{" "}
-                <em style={{ marginTop: "6px" }}>March 2007 - February 2010</em>
+                Software Developer Trainee{" "}
+                <span style={infoSpanStyle}>&bull;</span>{" "}
+                <em style={{ marginTop: "6px" }}>June 2018 - Present</em>
               </p>
-
-              <p>
-                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-                amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
-                tincidunt auctor a ornare odio. Sed non mauris vitae erat
+              <ul style={{ listStyle: "none", paddingLeft: "0" }}>
+                <li>Part time work alongside studies.</li>
+                <li>
+                  Main responsibilities are implementation and development of
+                  test automation.
+                </li>
+                <li>Tech stack: C#, Ranorex, Javascript</li>
+              </ul>
+            </div>
+            <div>
+              <h3 style={subHeaderStyling}>Beamex Oy Ab</h3>
+              <p style={infoStyle}>
+                IT Specialist Trainee <span style={infoSpanStyle}>&bull;</span>{" "}
+                <em style={{ marginTop: "6px" }}>June 2017 - September 2018</em>
               </p>
+              <ul style={{ listStyle: "none", paddingLeft: "0" }}>
+                <li>Part time work alongside studies.</li>
+                <li>
+                  Main responsibilities were system administration, user
+                  assistance and tech support.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 style={subHeaderStyling}>Beamex Oy Ab</h3>
+              <p style={infoStyle}>
+                IT Support Technician <span style={infoSpanStyle}>&bull;</span>{" "}
+                <em style={{ marginTop: "6px" }}>June 2016 - August 2016</em>
+              </p>
+              <ul style={{ listStyle: "none", paddingLeft: "0" }}>
+                <li>Summer Job.</li>
+                <li>
+                  Main responsibilities were user assistance and tech support.
+                </li>
+              </ul>
             </div>
           </div>
         </div>

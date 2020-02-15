@@ -2,9 +2,10 @@ import React, { Component } from "react";
 
 const educationStyle = {
   background: "#fff",
-  paddingTop: "90px",
-  paddingBottom: "72px",
-  overflow: "hidden"
+  paddingTop: "50px",
+  paddingBottom: "50px",
+  overflow: "hidden",
+  textAlign: "center"
 };
 
 const headingStyle = {

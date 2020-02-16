@@ -51,7 +51,6 @@ export class About extends Component {
       hover: false
     };
   }
-
   toggleHover() {
     this.setState({
       hover: !this.state.hover
@@ -89,12 +88,12 @@ export class About extends Component {
                 this.state.hover ? howerdowloadButtonStyle : dowloadButtonStyle
               }
               href="cv"
-              class="button"
+              className="button"
               onMouseEnter={this.toggleHover}
               onMouseLeave={this.toggleHover}
             >
-              <i style={downloadIconStyle} class="fa fa-download"></i>Download
-              Resume
+              <i style={downloadIconStyle} className="fa fa-download"></i>
+              Download Resume
             </a>
           </p>
         </div>

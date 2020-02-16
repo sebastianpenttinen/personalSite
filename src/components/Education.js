@@ -42,9 +42,15 @@ const colStyle = {
 };
 
 export class Education extends Component {
+  constructor(props) {
+    super(props);
+    this.Ref = React.createRef();
+    this.scrollToMyRef = this.scrollToRef.bind(this);
+  }
+  scrollToRef = () => window.scrollTo(0, this.Ref.current.offsetTop);
   render() {
     return (
-      <section style={educationStyle}>
+      <section ref={this.Ref} style={educationStyle}>
         <div style={colStyle}>
           <div>
             <h1 style={headingStyle}>

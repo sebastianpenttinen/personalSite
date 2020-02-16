@@ -23,9 +23,16 @@ const subHeading = {
   color: "#fff"
 };
 export class Portfolio extends Component {
+  constructor(props) {
+    super(props);
+    this.Ref = React.createRef();
+    this.scrollToMyRef = this.scrollToRef.bind(this);
+  }
+  scrollToRef = () => window.scrollTo(0, this.Ref.current.offsetTop);
+
   render() {
     return (
-      <div style={{ background: "#2b2b2b" }}>
+      <div ref={this.Ref} style={{ background: "#2b2b2b" }}>
         <h1 style={headingStyle}>Portfolio</h1>
         <div>
           <div style={columnStyle}>

@@ -33,9 +33,15 @@ const ulStyle = {
   paddingLeft: "0"
 };
 export class Skills extends Component {
+  constructor(props) {
+    super(props);
+    this.Ref = React.createRef();
+    this.scrollToMyRef = this.scrollToRef.bind(this);
+  }
+  scrollToRef = () => window.scrollTo(0, this.Ref.current.offsetTop);
   render() {
     return (
-      <section style={skillStyle}>
+      <section ref={this.Ref} style={skillStyle}>
         <div style={colStyle}>
           <h1 style={headingStyle}>
             <span style={headingSpanStyle}>Skills</span>

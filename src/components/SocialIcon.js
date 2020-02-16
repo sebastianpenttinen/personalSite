@@ -31,7 +31,7 @@ export class SocialIcon extends Component {
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
         href={this.props.url}
-        class={this.props.className}
+        className={this.props.className}
       >
         <i aria-hidden="true" />
       </a>

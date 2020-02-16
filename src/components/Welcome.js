@@ -11,9 +11,15 @@ const imageStyle = {
   paddingTop: "20px"
 };
 export class Welcome extends Component {
+  constructor(props) {
+    super(props);
+    this.Ref = React.createRef();
+    this.scrollToMyRef = this.scrollToRef.bind(this);
+  }
+  scrollToRef = () => window.scrollTo(0, this.Ref.current.offsetTop);
   render() {
     return (
-      <div>
+      <div ref={this.Ref}>
         <img style={imageStyle} src={ProfilePic} alt="ProfilePic" />
         <h1 className="justify-content-center" style={{ display: "flex" }}>
           Hello I'm Sebastian Penttinen

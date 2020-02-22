@@ -4,7 +4,7 @@ import { Nav } from "react-bootstrap";
 export class Bar extends Component {
   render() {
     return (
-      <Nav className="justify-content-center" activeKey="#home">
+      <Nav className="justify-content-center">
         <Nav.Item>
           <Nav.Link name="Home" ref={this.Ref} onClick={this.props.scrollTo}>
             Home

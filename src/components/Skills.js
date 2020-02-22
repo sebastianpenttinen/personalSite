@@ -29,8 +29,9 @@ const ulStyle = {
   display: "inline-block",
   marginTop: "10px",
   listStyleType: "none",
-  columnCount: "4",
-  paddingLeft: "0"
+  columnCount: "7",
+  paddingLeft: "0",
+  fontSize: "larger"
 };
 export class Skills extends Component {
   constructor(props) {
@@ -49,7 +50,7 @@ export class Skills extends Component {
         </div>
 
         <div style={{ paddingLeft: "10%", paddingRight: "10%" }}>
-          <div style={{ padding: "20px" }}>
+          <div style={{ padding: "30px" }}>
             <ul style={ulStyle}>
               <SkillItem skill="Python" />
               <SkillItem skill="Django" />
@@ -63,14 +64,15 @@ export class Skills extends Component {
               <SkillItem skill="SQL" />
               <SkillItem skill="Latex" />
               <SkillItem skill="Ranorex" />
+              <SkillItem skill="Scrum" />
               <SkillItem skill="Software Testing" />
               <SkillItem skill="Test Automation" />
-              <SkillItem skill="Reinforcement Learning" />
+              <SkillItem skill="Open Ai Gym" />
+              <SkillItem skill="Docker" />
               <SkillItem skill="Data Analysis" />
               <SkillItem skill="Machine Learning" />
               <SkillItem skill="Technical Support" />
               <SkillItem skill="Agile Development" />
-              <SkillItem skill="Scrum" />
             </ul>
           </div>
         </div>

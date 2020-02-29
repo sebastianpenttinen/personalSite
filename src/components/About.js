@@ -16,12 +16,19 @@ const headerStyle = {
 
 const paragraphStyle = {
   lineHeight: "30px",
-  color: "#7a7a7a"
+  color: "#7a7a7a",
+  textAlign: "justify"
+};
+
+const alternativeParagrapgh = {
+  lineHeight: "30px",
+  color: "#7a7a7a",
+  textAlign: "center"
 };
 
 const aboutMeStyle = {
-  paddingLeft: "10%",
-  paddingRight: "10%"
+  paddingLeft: "25%",
+  paddingRight: "25%"
 };
 
 const downloadStyle = {
@@ -63,21 +70,20 @@ export class About extends Component {
         <div style={aboutMeStyle}>
           <h2 style={headerStyle}>About Me</h2>
           <p style={paragraphStyle}>
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam. "
+            I am a master student at Åbo Akademi University currently writing my
+            master thesis. I have worked in the IT-field alongside my studies as
+            a developer and system administrator. I have taught coding at
+            various events aimed at getting non tech people interested in
+            coding.
+          </p>
+          <p style={alternativeParagrapgh}>
+            I am always looking for opportunities so contact me if you are
+            interested.
           </p>
         </div>
         <div style={{ textAlign: "center" }}>
           <h2 style={headerStyle}>Contact Me</h2>
-          <p style={paragraphStyle}>
+          <p style={alternativeParagrapgh}>
             <span>sebastian.penttinen@gmail.com</span>
           </p>
         </div>

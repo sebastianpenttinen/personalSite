@@ -20,7 +20,7 @@ const paragraphStyle = {
   textAlign: "justify"
 };
 
-const alternativeParagrapgh = {
+const alternativeParagraph = {
   lineHeight: "30px",
   color: "#7a7a7a",
   textAlign: "center"
@@ -36,12 +36,12 @@ const downloadStyle = {
   textAlign: "center"
 };
 
-const dowloadButtonStyle = {
+const downloadButtonStyle = {
   marginTop: "6px",
   color: "#fff"
 };
 
-const howerdowloadButtonStyle = {
+const hoverDownloadButtonStyle = {
   marginTop: "6px",
   color: "OrangeRed"
 };
@@ -76,14 +76,14 @@ export class About extends Component {
             various events aimed at getting non tech people interested in
             coding.
           </p>
-          <p style={alternativeParagrapgh}>
+          <p style={alternativeParagraph}>
             I am always looking for opportunities so contact me if you are
             interested.
           </p>
         </div>
         <div style={{ textAlign: "center" }}>
           <h2 style={headerStyle}>Contact Me</h2>
-          <p style={alternativeParagrapgh}>
+          <p style={alternativeParagraph}>
             <span>sebastian.penttinen@gmail.com</span>
           </p>
         </div>
@@ -91,7 +91,9 @@ export class About extends Component {
           <p>
             <a
               style={
-                this.state.hover ? howerdowloadButtonStyle : dowloadButtonStyle
+                this.state.hover
+                  ? hoverDownloadButtonStyle
+                  : downloadButtonStyle
               }
               href="cv"
               className="button"

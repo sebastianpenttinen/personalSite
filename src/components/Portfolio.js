@@ -69,8 +69,9 @@ export class Portfolio extends Component {
             <FlipCard
               title="This Website"
               content="Personal Website"
-              backside="Tech Stack:"
+              backside="React, Flask, Docker"
               hover={this.state.siteHover}
+              url="https://github.com/sebastianpenttinen/personalSite"
             />
           </div>
           <div
@@ -81,8 +82,9 @@ export class Portfolio extends Component {
             <FlipCard
               title="EZAI"
               content="Dynamically generate API endpoints for ML models"
-              backside="Tech Stack:"
+              backside="Django, Django Rest Framework, PostgreSQL, Bulma, SendGrid"
               hover={this.state.ezaiHover}
+              url="https://github.com/sebastianpenttinen/EZAI"
             />
           </div>
           <div
@@ -93,8 +95,9 @@ export class Portfolio extends Component {
             <FlipCard
               title="Yle-Crawler"
               content="Crawl Svenska Yle for their daily news tl;dr and get it emailed to you"
-              backside="Tech Stack:"
+              backside="Beautiful Soup, SendGrid"
               hover={this.state.yleHover}
+              url="https://github.com/sebastianpenttinen/yle-crawler"
             />
           </div>
           <div
@@ -103,10 +106,11 @@ export class Portfolio extends Component {
             onMouseLeave={this.toggleThesisHover}
           >
             <FlipCard
-              title="Master Thesis"
+              title="Master Thesis, TBP"
               content="Collision avoidance in a maritime setting using Reinforcement Learning"
-              backside="Tech Stack:"
+              backside="Open Ai Gym, Keras-rl, Tensorflow, Keras"
               hover={this.state.thesisHover}
+              url="https://github.com/sebastianpenttinen"
             />
           </div>
         </div>

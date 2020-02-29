@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { SocialIcon } from "./SocialIcon";
 const subHeading = {
   color: "#fff"
 };
@@ -44,6 +44,13 @@ export class FlipCard extends Component {
           >
             <h1 style={subHeading}> Tech Stack</h1>
             <p style={paragraphStyle}>{this.props.backside}</p>
+            <div style={{ fontSize: "50px" }}>
+              <SocialIcon
+                className="fa fa-github"
+                url={this.props.url}
+                aria="github"
+              />
+            </div>
           </div>
         </div>
       </div>

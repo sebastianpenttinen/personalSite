@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-
-const columnStyle = {
-  float: "left",
-  width: "50%",
-  padding: "10%",
-  background: "#2b2b2b"
-};
+import { FlipCard } from "./FlipCard";
 
 const headingStyle = {
   color: "#fff",
@@ -14,42 +8,106 @@ const headingStyle = {
   marginBottom: "0px"
 };
 
-const paragraphStyle = {
-  lineHeight: "30px",
-  color: "#7a7a7a"
-};
-
-const subHeading = {
-  color: "#fff"
+const divStyle = {
+  padding: "10%",
+  display: "flex",
+  justifyContent: "center"
 };
 export class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.Ref = React.createRef();
     this.scrollToMyRef = this.scrollToRef.bind(this);
+    this.toggleSiteHover = this.toggleSiteHover.bind(this);
+    this.toggleEzaiHover = this.toggleEzaiHover.bind(this);
+    this.toggleYleHover = this.toggleYleHover.bind(this);
+    this.toggleThesisHover = this.toggleThesisHover.bind(this);
+    this.state = {
+      siteHover: false,
+      ezaiHover: false,
+      yleHover: false,
+      thesisHover: false
+    };
   }
+
   scrollToRef = () => window.scrollTo(0, this.Ref.current.offsetTop);
+
+  toggleSiteHover() {
+    this.setState({
+      siteHover: !this.state.siteHover
+    });
+  }
+
+  toggleEzaiHover() {
+    this.setState({
+      ezaiHover: !this.state.ezaiHover
+    });
+  }
+
+  toggleYleHover() {
+    this.setState({
+      yleHover: !this.state.yleHover
+    });
+  }
+
+  toggleThesisHover() {
+    this.setState({
+      thesisHover: !this.state.thesisHover
+    });
+  }
 
   render() {
     return (
-      <div ref={this.Ref} style={{ background: "#2b2b2b" }}>
+      <div ref={this.Ref}>
         <h1 style={headingStyle}>Portfolio</h1>
         <div>
-          <div style={columnStyle}>
-            <h2 style={subHeading}> This Website</h2>
-            <p style={paragraphStyle}> Some text</p>
+          <div
+            style={divStyle}
+            onMouseEnter={this.toggleSiteHover}
+            onMouseLeave={this.toggleSiteHover}
+          >
+            <FlipCard
+              title="This Website"
+              content="Personal Website"
+              backside="Tech Stack:"
+              hover={this.state.siteHover}
+            />
           </div>
-          <div style={columnStyle}>
-            <h2 style={subHeading}> Ezai</h2>
-            <p style={paragraphStyle}> Some text</p>
+          <div
+            style={divStyle}
+            onMouseEnter={this.toggleEzaiHover}
+            onMouseLeave={this.toggleEzaiHover}
+          >
+            <FlipCard
+              title="EZAI"
+              content="Dynamically generate API endpoints for ML models"
+              backside="Tech Stack:"
+              hover={this.state.ezaiHover}
+            />
           </div>
-          <div style={columnStyle}>
-            <h2 style={subHeading}> Yle-Crawler</h2>
-            <p style={paragraphStyle}> Some text</p>
+          <div
+            style={divStyle}
+            onMouseEnter={this.toggleYleHover}
+            onMouseLeave={this.toggleYleHover}
+          >
+            <FlipCard
+              title="Yle-Crawler"
+              content="Crawl Svenska Yle for their daily news tl;dr and get it emailed to you"
+              backside="Tech Stack:"
+              hover={this.state.yleHover}
+            />
           </div>
-          <div style={columnStyle}>
-            <h2 style={subHeading}> Master Thesis</h2>
-            <p style={paragraphStyle}> Some text</p>
+          <div
+            style={divStyle}
+            onMouseEnter={this.toggleThesisHover}
+            onMouseLeave={this.toggleThesisHover}
+          >
+            <FlipCard
+              title="Master Thesis"
+              content="Collision avoidance in a maritime setting using Reinforcement Learning"
+              backside="Tech Stack:"
+              hover={this.state.thesisHover}
+            />
           </div>
         </div>
       </div>

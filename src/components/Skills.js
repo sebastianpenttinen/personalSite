@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { SkillItem } from "./SkillItem";
-
+import { Row, Container, Col } from "react-bootstrap";
 const skillStyle = {
   background: "#fff",
   paddingTop: "50px",
@@ -25,14 +25,14 @@ const headingSpanStyle = {
   paddingBottom: "6px"
 };
 
-const ulStyle = {
-  display: "inline-block",
-  marginTop: "10px",
-  listStyleType: "none",
-  columnCount: "7",
-  paddingLeft: "0",
-  fontSize: "larger"
+const skillsStyle = {
+  padding: "30px",
+  fontSize: "larger",
+  font: "15px 'opensans-bold', sans- serif",
+  textAlign: "center",
+  fontWeight: "700"
 };
+
 export class Skills extends Component {
   constructor(props) {
     super(props);
@@ -50,30 +50,44 @@ export class Skills extends Component {
         </div>
 
         <div style={{ paddingLeft: "10%", paddingRight: "10%" }}>
-          <div style={{ padding: "30px" }}>
-            <ul style={ulStyle}>
-              <SkillItem skill="Python" />
-              <SkillItem skill="Django" />
-              <SkillItem skill="JavaScript" />
-              <SkillItem skill="Java" />
-              <SkillItem skill="Git" />
-              <SkillItem skill="React" />
-              <SkillItem skill="HTML" />
-              <SkillItem skill="CSS" />
-              <SkillItem skill="C#" />
-              <SkillItem skill="SQL" />
-              <SkillItem skill="Latex" />
-              <SkillItem skill="Ranorex" />
-              <SkillItem skill="Scrum" />
-              <SkillItem skill="Software Testing" />
-              <SkillItem skill="Test Automation" />
-              <SkillItem skill="Open Ai Gym" />
-              <SkillItem skill="Docker" />
-              <SkillItem skill="Data Analysis" />
-              <SkillItem skill="Machine Learning" />
-              <SkillItem skill="Technical Support" />
-              <SkillItem skill="Agile Development" />
-            </ul>
+          <div style={skillsStyle}>
+            <Container>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>C#</Col>
+                <Col>SQL</Col>
+                <Col>Scrum</Col>
+              </Row>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>Git</Col>
+                <Col>HTML</Col>
+                <Col>Javascript</Col>
+              </Row>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>CSS</Col>
+                <Col>Docker</Col>
+                <Col>Open Ai Gym</Col>
+              </Row>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>Java</Col>
+                <Col>Ranorex</Col>
+                <Col>Data Analysis</Col>
+              </Row>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>Latex</Col>
+                <Col>Test Automation</Col>
+                <Col>Software Testing</Col>
+              </Row>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>React</Col>
+                <Col>Machine Learning</Col>
+                <Col>Technical Support</Col>
+              </Row>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>Django</Col>
+                <Col>Agile Development</Col>
+                <Col>Reinforcement Learning</Col>
+              </Row>
+            </Container>
           </div>
         </div>
       </section>

@@ -5,7 +5,6 @@ import { Welcome } from "./Welcome";
 import { About } from "./About";
 import { Education } from "./Education";
 import { Work } from "./Work";
-import { Skills } from "./Skills";
 import { Portfolio } from "./Portfolio";
 export class Home extends Component {
   static displayName = Home.name;
@@ -25,9 +24,6 @@ export class Home extends Component {
         break;
       case "CV":
         this.CVRef.current.scrollToRef();
-        break;
-      case "Skills":
-        this.SkillsRef.current.scrollToRef();
         break;
       case "Portfolio":
         this.PortRef.current.scrollToRef();
@@ -49,7 +45,6 @@ export class Home extends Component {
         <About />
         <Education ref={this.CVRef} />
         <Work />
-        <Skills ref={this.SkillsRef} />
         <Portfolio ref={this.PortRef} />
       </div>
     );

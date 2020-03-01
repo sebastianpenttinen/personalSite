@@ -31,7 +31,8 @@ const infoSpanStyle = {
 
 const colStyle = {
   paddingLeft: "10%",
-  paddingRight: "10%"
+  paddingRight: "10%",
+  paddingBottom: "2%"
 };
 
 const subHeaderStyling = {

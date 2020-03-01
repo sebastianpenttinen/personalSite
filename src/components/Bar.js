@@ -16,11 +16,6 @@ export class Bar extends Component {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link name="Skills" onClick={this.props.scrollTo}>
-            Skills
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link name="Portfolio" onClick={this.props.scrollTo}>
             Portfolio
           </Nav.Link>

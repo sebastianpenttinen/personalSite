@@ -13,6 +13,12 @@ const divStyle = {
   display: "flex",
   justifyContent: "center"
 };
+
+const phone = {
+  padding: "30%",
+  display: "flex",
+  justifyContent: "center"
+};
 export class Portfolio extends Component {
   constructor(props) {
     super(props);
@@ -62,7 +68,7 @@ export class Portfolio extends Component {
         <h1 style={headingStyle}>Portfolio</h1>
         <div>
           <div
-            style={divStyle}
+            style={this.props.isMobile ? phone : divStyle}
             onMouseEnter={this.toggleSiteHover}
             onMouseLeave={this.toggleSiteHover}
           >
@@ -75,7 +81,7 @@ export class Portfolio extends Component {
             />
           </div>
           <div
-            style={divStyle}
+            style={this.props.isMobile ? phone : divStyle}
             onMouseEnter={this.toggleEzaiHover}
             onMouseLeave={this.toggleEzaiHover}
           >
@@ -88,7 +94,7 @@ export class Portfolio extends Component {
             />
           </div>
           <div
-            style={divStyle}
+            style={this.props.isMobile ? phone : divStyle}
             onMouseEnter={this.toggleYleHover}
             onMouseLeave={this.toggleYleHover}
           >
@@ -101,7 +107,7 @@ export class Portfolio extends Component {
             />
           </div>
           <div
-            style={divStyle}
+            style={this.props.isMobile ? phone : divStyle}
             onMouseEnter={this.toggleThesisHover}
             onMouseLeave={this.toggleThesisHover}
           >

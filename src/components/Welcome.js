@@ -10,6 +10,25 @@ const imageStyle = {
   width: "200px",
   paddingTop: "20px"
 };
+
+const headingStyleWeb = {
+  display: "flex"
+};
+
+const phone = {
+  display: "flex",
+  fontSize: "1.75rem"
+};
+
+const subHeadingWeb = {
+  display: "flex"
+};
+
+const phoneSubHeading = {
+  display: "flex",
+  fontSize: "1rem"
+};
+
 export class Welcome extends Component {
   constructor(props) {
     super(props);
@@ -21,10 +40,16 @@ export class Welcome extends Component {
     return (
       <div ref={this.Ref}>
         <img style={imageStyle} src={ProfilePic} alt="ProfilePic" />
-        <h1 className="justify-content-center" style={{ display: "flex" }}>
+        <h1
+          className="justify-content-center"
+          style={this.props.isMobile ? phone : headingStyleWeb}
+        >
           Hello I'm Sebastian Penttinen
         </h1>
-        <h3 className="justify-content-center" style={{ display: "flex" }}>
+        <h3
+          className="justify-content-center"
+          style={this.props.isMobile ? phoneSubHeading : subHeadingWeb}
+        >
           A Turku based software developer
         </h3>
         <Social />

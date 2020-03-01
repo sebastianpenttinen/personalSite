@@ -50,6 +50,11 @@ const downloadIconStyle = {
   marginRight: "15px",
   fontSize: "20px"
 };
+
+const phone = {
+  paddingLeft: "5%",
+  paddingRight: "5%"
+};
 export class About extends Component {
   constructor(props) {
     super(props);
@@ -67,7 +72,7 @@ export class About extends Component {
   render() {
     return (
       <section style={aboutStyle}>
-        <div style={aboutMeStyle}>
+        <div style={this.props.isMobile ? phone : aboutMeStyle}>
           <h2 style={headerStyle}>About Me</h2>
           <p style={paragraphStyle}>
             I am a master student at Åbo Akademi University currently writing my

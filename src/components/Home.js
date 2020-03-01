@@ -15,6 +15,9 @@ export class Home extends Component {
     this.SkillsRef = React.createRef();
     this.PortRef = React.createRef();
     this.scrollToMyRef = this.scrollToRef.bind(this);
+    this.state = {
+      mobile: window.innerWidth <= 800 && window.innerHeight <= 900
+    };
   }
 
   onClick = event => {
@@ -41,11 +44,11 @@ export class Home extends Component {
           <style>{"body { background-color: #121212; }"}</style>
         </Helmet>
         <Bar scrollTo={this.onClick} />
-        <Welcome ref={this.HomeRef} />
-        <About />
+        <Welcome ref={this.HomeRef} isMobile={this.state.mobile} />
+        <About isMobile={this.state.mobile} />
         <Education ref={this.CVRef} />
         <Work />
-        <Portfolio ref={this.PortRef} />
+        <Portfolio ref={this.PortRef} isMobile={this.state.mobile} />
       </div>
     );
   }

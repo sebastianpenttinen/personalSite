@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { SocialIcon } from "./SocialIcon";
+import { Button } from "react-bootstrap";
 const subHeading = {
   color: "#fff"
 };
@@ -20,21 +21,37 @@ const rotatedInner = {
 };
 
 export class FlipCard extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      clicked: false
+    };
+  }
+  handleClick() {
+    this.setState({
+      clicked: !this.state.clicked
+    });
+  }
+
   render() {
     return (
       <div style={{ position: "absolute" }}>
-        <div style={this.props.hover ? rotatedInner : inner}>
+        <div style={this.state.clicked ? rotatedInner : inner}>
           <div
             style={
-              this.props.hover ? { display: "none" } : { display: "block" }
+              this.state.clicked ? { display: "none" } : { display: "block" }
             }
           >
             <h1 style={subHeading}>{this.props.title}</h1>
             <p style={paragraphStyle}>{this.props.content}</p>
+            <Button onClick={this.handleClick} variant="dark">
+              Learn More
+            </Button>
           </div>
           <div
             style={
-              this.props.hover
+              this.state.clicked
                 ? { transform: "rotateY(180deg)" }
                 : {
                     transform: "rotateY(180deg)",
@@ -50,6 +67,11 @@ export class FlipCard extends Component {
                 url={this.props.url}
                 aria="github"
               />
+              <div>
+                <Button onClick={this.handleClick} variant="dark">
+                  Back
+                </Button>
+              </div>
             </div>
           </div>
         </div>

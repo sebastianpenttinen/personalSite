@@ -15,7 +15,7 @@ const divStyle = {
 };
 
 const phone = {
-  padding: "30%",
+  padding: "40%",
   display: "flex",
   justifyContent: "center"
 };

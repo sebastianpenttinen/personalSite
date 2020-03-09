@@ -31,7 +31,13 @@ export class Portfolio extends Component {
     return (
       <div ref={this.Ref}>
         <h1 style={headingStyle}>Portfolio</h1>
-        <div>
+        <div
+          style={
+            this.props.isMobile
+              ? { paddingBottom: "15%" }
+              : { paddingBottom: "5%" }
+          }
+        >
           <div style={this.props.isMobile ? phone : divStyle}>
             <FlipCard
               title="This Website"

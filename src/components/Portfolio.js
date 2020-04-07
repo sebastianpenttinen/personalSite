@@ -5,19 +5,19 @@ const headingStyle = {
   color: "#fff",
   textAlign: "center",
   paddingTop: "50px",
-  marginBottom: "0px"
+  marginBottom: "0px",
 };
 
 const divStyle = {
   padding: "10%",
   display: "flex",
-  justifyContent: "center"
+  justifyContent: "center",
 };
 
 const phone = {
   padding: "40%",
   display: "flex",
-  justifyContent: "center"
+  justifyContent: "center",
 };
 export class Portfolio extends Component {
   constructor(props) {
@@ -44,6 +44,14 @@ export class Portfolio extends Component {
               content="Personal Website"
               backside="React, Flask, Docker"
               url="https://github.com/sebastianpenttinen/personalSite"
+            />
+          </div>
+          <div style={this.props.isMobile ? phone : divStyle}>
+            <FlipCard
+              title="Mortgage Planner"
+              content="Figure out monthly payments for a mortgage"
+              backside="Vue.js, Spring Boot, Swagger, MongoDB, Docker"
+              url="https://github.com/sebastianpenttinen/Mortgage-Planner"
             />
           </div>
           <div style={this.props.isMobile ? phone : divStyle}>

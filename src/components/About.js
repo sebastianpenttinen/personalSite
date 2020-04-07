@@ -89,7 +89,7 @@ export class About extends Component {
         <div style={{ textAlign: "center" }}>
           <h2 style={headerStyle}>Contact Me</h2>
           <p style={alternativeParagraph}>
-            <span>sebastian.penttinen@gmail.com</span>
+            <span>sebastian.penttinen(at)gmail.com</span>
           </p>
         </div>
         <div style={downloadStyle}>

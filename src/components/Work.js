@@ -54,10 +54,28 @@ export class Work extends Component {
         <div style={colStyle}>
           <div>
             <div>
+              <h3 style={subHeaderStyling}>BeanBakers Ltd</h3>
+              <p style={infoStyle}>
+                Java Developer <span style={infoSpanStyle}>&bull;</span>{" "}
+                <em>April 2020 - Present</em>
+              </p>
+              <ul style={{ listStyle: "none", paddingLeft: "0" }}>
+                <li>Working full time as a Java developer.</li>
+                <li>
+                  Main responsibility is subcontracting in various software
+                  projects.
+                </li>
+                <li>Tech stack: Java, Spring, Quarkus, Vue.js</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div>
               <h3 style={subHeaderStyling}>Åbo Akademi University</h3>
               <p style={infoStyle}>
                 Research Assistant <span style={infoSpanStyle}>&bull;</span>{" "}
-                <em>November 2019 - Present</em>
+                <em>November 2019 - April 2020</em>
               </p>
               <ul style={{ listStyle: "none", paddingLeft: "0" }}>
                 <li>Working full time as a research assistant.</li>

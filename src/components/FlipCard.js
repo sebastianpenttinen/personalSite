@@ -2,22 +2,22 @@ import React, { Component } from "react";
 import { SocialIcon } from "./SocialIcon";
 import { Button } from "react-bootstrap";
 const subHeading = {
-  color: "#fff"
+  color: "#fff",
 };
 
 const paragraphStyle = {
   lineHeight: "30px",
-  color: "#7a7a7a"
+  color: "#7a7a7a",
 };
 const inner = {
   textAlign: "center",
-  transition: "transform 0.8s"
+  transition: "transform 0.8s",
 };
 
 const rotatedInner = {
   transform: "rotateY(180deg)",
   transition: "transform 0.8s",
-  textAlign: "center"
+  textAlign: "center",
 };
 
 export class FlipCard extends Component {
@@ -25,12 +25,12 @@ export class FlipCard extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      clicked: false
+      clicked: false,
     };
   }
   handleClick() {
     this.setState({
-      clicked: !this.state.clicked
+      clicked: !this.state.clicked,
     });
   }
 
@@ -55,7 +55,7 @@ export class FlipCard extends Component {
                 ? { transform: "rotateY(180deg)" }
                 : {
                     transform: "rotateY(180deg)",
-                    display: "none"
+                    display: "none",
                   }
             }
           >
@@ -63,7 +63,7 @@ export class FlipCard extends Component {
             <p style={paragraphStyle}>{this.props.backside}</p>
             <div style={{ fontSize: "50px" }}>
               <SocialIcon
-                className="fa fa-github"
+                className={this.props.linkIcon}
                 url={this.props.url}
                 aria="github"
               />

@@ -16,11 +16,11 @@ export class Home extends Component {
     this.PortRef = React.createRef();
     this.scrollToMyRef = this.scrollToRef.bind(this);
     this.state = {
-      mobile: window.innerWidth <= 800 && window.innerHeight <= 900
+      mobile: window.innerWidth <= 1000 && window.innerHeight <= 1000,
     };
   }
 
-  onClick = event => {
+  onClick = (event) => {
     switch (event.target.name) {
       case "Home":
         this.scrollToRef();

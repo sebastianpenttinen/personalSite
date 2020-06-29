@@ -44,6 +44,7 @@ export class Portfolio extends Component {
               content="Personal Website"
               backside="React, Flask, Docker"
               url="https://github.com/sebastianpenttinen/personalSite"
+              linkIcon="fa fa-github"
             />
           </div>
           <div style={this.props.isMobile ? phone : divStyle}>
@@ -52,6 +53,7 @@ export class Portfolio extends Component {
               content="Figure out monthly payments for a mortgage"
               backside="Vue.js, Spring Boot, Swagger, MongoDB, Docker"
               url="https://github.com/sebastianpenttinen/Mortgage-Planner"
+              linkIcon="fa fa-github"
             />
           </div>
           <div style={this.props.isMobile ? phone : divStyle}>
@@ -60,6 +62,7 @@ export class Portfolio extends Component {
               content="Dynamically generate API endpoints for ML models"
               backside="Django, Django Rest Framework, PostgreSQL, Bulma, SendGrid"
               url="https://github.com/sebastianpenttinen/EZAI"
+              linkIcon="fa fa-github"
             />
           </div>
           <div style={this.props.isMobile ? phone : divStyle}>
@@ -68,14 +71,16 @@ export class Portfolio extends Component {
               content="Crawl Svenska Yle for their daily news tl;dr and get it emailed to you"
               backside="Beautiful Soup, SendGrid"
               url="https://github.com/sebastianpenttinen/yle-crawler"
+              linkIcon="fa fa-github"
             />
           </div>
           <div style={this.props.isMobile ? phone : divStyle}>
             <FlipCard
-              title="Master Thesis, TBP"
-              content="Collision avoidance in a maritime setting using Reinforcement Learning"
+              title="Master's Thesis"
+              content="COLREG compliant collision avoidance using reinforcement learning"
               backside="Open Ai Gym, Keras-rl, Tensorflow, Keras"
-              url="https://github.com/sebastianpenttinen"
+              url="https://www.doria.fi/handle/10024/177467"
+              linkIcon="fa fa-link"
             />
           </div>
         </div>

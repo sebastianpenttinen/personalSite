@@ -4,68 +4,68 @@ const aboutStyle = {
   background: "#2b2b2b",
   paddingTop: "100px",
   paddingBottom: "66px",
-  overflow: "hidden"
+  overflow: "hidden",
 };
 
 const headerStyle = {
   display: "flex",
   justifyContent: "center",
   color: "#fff",
-  marginBottom: "12px"
+  marginBottom: "12px",
 };
 
 const paragraphStyle = {
   lineHeight: "30px",
   color: "#7a7a7a",
-  textAlign: "justify"
+  textAlign: "justify",
 };
 
 const alternativeParagraph = {
   lineHeight: "30px",
   color: "#7a7a7a",
-  textAlign: "center"
+  textAlign: "center",
 };
 
 const aboutMeStyle = {
   paddingLeft: "25%",
-  paddingRight: "25%"
+  paddingRight: "25%",
 };
 
 const downloadStyle = {
   paddingTop: "6px",
-  textAlign: "center"
+  textAlign: "center",
 };
 
 const downloadButtonStyle = {
   marginTop: "6px",
-  color: "#fff"
+  color: "#fff",
 };
 
 const hoverDownloadButtonStyle = {
   marginTop: "6px",
-  color: "OrangeRed"
+  color: "OrangeRed",
 };
 
 const downloadIconStyle = {
   marginRight: "15px",
-  fontSize: "20px"
+  fontSize: "20px",
 };
 
 const phone = {
   paddingLeft: "5%",
-  paddingRight: "5%"
+  paddingRight: "5%",
 };
 export class About extends Component {
   constructor(props) {
     super(props);
     this.toggleHover = this.toggleHover.bind(this);
     this.state = {
-      hover: false
+      hover: false,
     };
   }
   toggleHover() {
     this.setState({
-      hover: !this.state.hover
+      hover: !this.state.hover,
     });
   }
 
@@ -75,11 +75,12 @@ export class About extends Component {
         <div style={this.props.isMobile ? phone : aboutMeStyle}>
           <h2 style={headerStyle}>About Me</h2>
           <p style={paragraphStyle}>
-            I am a master student at Åbo Akademi University currently writing my
-            master thesis. I have worked in the IT-field alongside my studies as
-            a developer and system administrator. I have taught coding at
-            various events aimed at getting non tech people interested in
-            coding.
+            I am a recent MSc in Computer Science graduate from Åbo Akademi
+            University. Currently I am working as a Java developer at BeanBakers
+            Ltd. Mainly focusing on projects with Spring, Quarkus and Vue.js. I
+            have practical experience in the IT-field from working alongside my
+            studies as a software developer and systems administrator. I also
+            have experience teaching programming.
           </p>
           <p style={alternativeParagraph}>
             I am always looking for opportunities so contact me if you are

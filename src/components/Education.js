@@ -5,40 +5,40 @@ const educationStyle = {
   paddingTop: "50px",
   paddingBottom: "50px",
   overflow: "hidden",
-  textAlign: "center"
+  textAlign: "center",
 };
 
 const headingStyle = {
   color: "Black",
   textTransform: "uppercase",
   letterSpacing: "1px",
-  fontSize: "2.0em"
+  fontSize: "2.0em",
 };
 
 const headingSpanStyle = {
   borderBottom: "3px solid #11abb0",
-  paddingBottom: "6px"
+  paddingBottom: "6px",
 };
 
 const infoStyle = {
   color: "#6e7881",
   marginBottom: "18px",
-  marginTop: "9px"
+  marginTop: "9px",
 };
 
 const subHeaderStyling = {
   color: "#6e7881",
   marginTop: "25px",
-  fontSize: "larger"
+  fontSize: "larger",
 };
 const infoSpanStyle = {
   marginRight: "5px",
-  marginLeft: "5px"
+  marginLeft: "5px",
 };
 
 const colStyle = {
   paddingLeft: "10%",
-  paddingRight: "10%"
+  paddingRight: "10%",
 };
 
 export class Education extends Component {
@@ -64,11 +64,11 @@ export class Education extends Component {
                 <p style={infoStyle}>
                   Master in Computer Science{" "}
                   <span style={infoSpanStyle}>&bull;</span>{" "}
-                  <em>September 2018 - May 2020</em>
+                  <em>September 2018 - Jun 2020</em>
                 </p>
 
                 <p>
-                  Thesis topic: Collision avoidance for autonomous vessels using
+                  Thesis topic: COLREG compliant collision avoidance using
                   reinforcement learning
                 </p>
               </div>

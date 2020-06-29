@@ -6,27 +6,27 @@ const imageStyle = {
   display: "block",
   marginLeft: "auto",
   marginRight: "auto",
-  borderRadius: "25%",
-  width: "200px",
-  paddingTop: "20px"
+  borderRadius: "20%",
+  width: "300px",
+  paddingTop: "20px",
 };
 
 const headingStyleWeb = {
-  display: "flex"
+  display: "flex",
 };
 
 const phone = {
   display: "flex",
-  fontSize: "1.75rem"
+  fontSize: "1.75rem",
 };
 
 const subHeadingWeb = {
-  display: "flex"
+  display: "flex",
 };
 
 const phoneSubHeading = {
   display: "flex",
-  fontSize: "1rem"
+  fontSize: "1rem",
 };
 
 export class Welcome extends Component {

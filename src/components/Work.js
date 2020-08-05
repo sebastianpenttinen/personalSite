@@ -96,7 +96,7 @@ export class Work extends Component {
               <ul style={{ listStyle: "none", paddingLeft: "0" }}>
                 <li>Part time work alongside studies.</li>
                 <li>
-                  Main responsibilities are implementation and development of
+                  Main responsibilities were implementation and development of
                   test automation.
                 </li>
                 <li>Tech stack: C#, Ranorex, Javascript</li>

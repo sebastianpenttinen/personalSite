@@ -78,8 +78,8 @@ export class Work extends Component {
                 <em>November 2019 - April 2020</em>
               </p>
               <ul style={{ listStyle: "none", paddingLeft: "0" }}>
-                <li>Working full time as a research assistant.</li>
-                <li>Main responsibility is to write my master thesis.</li>
+                <li>Worked full time as a research assistant.</li>
+                <li>Main responsibility was to write my master's thesis.</li>
                 <li>Tech stack: Python, Open Ai gym, Qt</li>
               </ul>
             </div>

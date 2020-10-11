@@ -4,10 +4,6 @@ COPY ./backend /app
 
 ENV STATIC_PATH /app/build/static
 
-ENV APP_HOME /app
+RUN pip install -r /app/requirements.txt
 
-WORKDIR $APP_HOME
-
-RUN pip install -r requirements.txt
-
-CMD [ "python", "./main.py" ]
+CMD [ "python", "./app/main.py" ]

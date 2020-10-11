@@ -1,3 +1,13 @@
-FROM tiangolo/uwsgi-nginx-flask:python3.6
+FROM python:3.8.1
+
 COPY ./backend /app
+
 ENV STATIC_PATH /app/build/static
+
+ENV APP_HOME /app
+
+WORKDIR $APP_HOME
+
+RUN pip install -r requirements.txt
+
+CMD [ "python", "./main.py" ]
